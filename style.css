@@ -6,9 +6,12 @@
 
 :root{
 font-size: 62.5%;
+font-family: "Mulish", sans-serif;
 
+--color-base-white: hsl(0, 0%, 100%);
 --color-base-blue-200: hsl(195, 46%, 40%);
 --color-base-blue-600: hsl(195, 91%, 25%);
 --color-base-black-800: hsl(240, 6%, 13%);
 --color-base-black-900: hsl(240, 5%, 7%);
 }
+
