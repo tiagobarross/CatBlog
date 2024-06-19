@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root{
@@ -15,3 +18,22 @@ font-family: "Mulish", sans-serif;
 --color-base-black-900: hsl(240, 5%, 7%);
 }
 
+header{
+  background-color: var(--color-base-blue-600);
+  padding: 1.2rem 2.8rem;
+}
+
+header .container{
+  max-width: 37.4rem;
+  margin-inline: auto;
+
+  display: flex;
+  gap: 2.6rem;
+  align-items: center;
+}
+
+.avatar{
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
