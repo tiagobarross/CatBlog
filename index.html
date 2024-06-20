@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
 
   <link rel="stylesheet" href="style.css">
 
@@ -13,15 +13,15 @@
   <title>CatBlog</title>
 </head>
 <body>
-  <div class="page">
-    <header class="container">
+  <div id="page">
+    <header>
       <div class="container">
         <img class="logo" src="./assets/logo.svg" alt="Logo">
 
       <form>
         <div class="input-wrapper">
-          <label for="search">Pesquisar artigos</label>
-          <input type="text" id="search" placeholder="Pesquisar artigos">
+          <label for="search">Pesquise por artigos</label>
+          <input type="text" id="search" placeholder="Pesquise por artigos">
         </div>
       </form>
 
@@ -34,13 +34,15 @@
 
       <h1>Seriam os gatos astronautas?</h1>
 
-      <button>
-        <img src="./assets/like.svg" alt="">
-      </button>
-
-      <button>
-        <img src="./assets/dislike.svg" alt="">
-      </button>
+      <div class="buttons">
+        <button>
+          <img src="./assets/like.png" alt="">
+        </button>
+  
+        <button>
+          <img src="./assets/dislike.png" alt="">
+        </button>
+      </div>
 
       <p>
         Os gatos são animais fascinantes e cercados de mistérios. De temperamento independente e misterioso, esses felinos são conhecidos por sua agilidade, elegância e um comportamento muitas vezes imprevisível. Contudo, recentemente, uma teoria tem ganhado espaço na internet e entre teóricos de conspiração: seriam os gatos astronautas?
