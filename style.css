@@ -33,6 +33,11 @@ main img{
   margin-top: 2rem;
 }
 
+aside img{
+  transition: all 300ms;
+  display: block;
+}
+
 h3{
   line-height: 100%;
 }
@@ -95,10 +100,7 @@ button{
 
 button:hover{
   transform: scale(1.1);
-}
-
-main .buttons{
-  
+  cursor: pointer;
 }
 
 main p{
@@ -194,5 +196,32 @@ footer{
 
   footer{
     grid-area: footer;
+  }
+}
+
+header{
+  animation: FromTop 600ms 100ms backwards;
+}
+
+main, aside{
+  animation: FromBottom 600ms 100ms backwards;
+}
+
+aside img:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+
+@keyframes FromTop{
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes FromBottom {
+  from{
+    opacity: 0;
+    transform: translateY(100px);
   }
 }
