@@ -23,14 +23,14 @@ header{
   padding: 1.2rem 2.8rem;
 }
 
-aside img{
-  width: 100%;
-  height: auto;
-}
-.main-img{
+main img, aside img{
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
+}
+
+main img{
+  margin-top: 2rem;
 }
 
 h3{
@@ -84,13 +84,13 @@ header .header-content{
 /* main */
 
 main h1{
-  margin-top: 1.6rem;
+  margin-top: 2rem;
 }
 
 button{
   all: unset;
 
-  transition: all .3s
+  transition: all .3s;
 }
 
 button:hover{
@@ -98,11 +98,11 @@ button:hover{
 }
 
 main .buttons{
-  margin-top: .8rem;
+  
 }
 
 main p{
-  margin-top: 1.6rem;
+  margin-top: 2rem;
   font-size: 1.6rem;
 }
 
@@ -138,4 +138,61 @@ footer{
   padding-block: 2.4rem;
   font-size: 1.6rem;
   margin-top: 3.9rem;
+}
+
+@media (width > 58rem){
+  #page{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+
+    gap: 4rem 4rem;
+  }
+
+  header .header-content,
+  .container{
+    max-width: initial;
+    margin-inline: initial;
+    padding: initial;
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  header .header-content{
+    max-width: 121.6;
+    margin-inline: auto;
+  }
+
+  header form{
+    flex: 1;
+  }
+
+  header form input{
+    width: 100%;
+  }
+
+  main{
+    grid-area: main;
+  }
+
+  main.container{
+    max-width: 80rem;
+    margin-left: auto;
+  }
+
+  aside{
+    grid-area: aside;
+  }
+
+  aside.container{
+    max-width: 38.4rem;
+  }
+
+  footer{
+    grid-area: footer;
+  }
 }
